@@ -9,9 +9,12 @@
 
   <div
     data-controller="current-time"
-    class="w-full pt-10"
-    data-current-time-pre-text-value="TROPICAL INFORMA ->">
+    data-current-time-pre-text-value="TROPICAL INFORMA ->"
+    class="flex flex-col w-full pt-10">
+
     <p data-current-time-target="currentTime24">Hora atual (24H):</p>
     <p data-current-time-target="currentTime12">Hora atual (12H):</p>
+
+    <%= link_to "Copiar para o console", "#", class: "mt-10 text-blue-600", data: { action: "click->current-time#showOnConsole" } %>
   </div>
 </div>

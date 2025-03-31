@@ -24,4 +24,9 @@ export default class extends Controller {
     this.currentTime24Target.textContent = `${this.preTextValue} Hora atual (24H): ${localeTime24}`
     this.currentTime12Target.textContent = `${this.preTextValue} Hora atual (12H): ${localeTime12}`
   }
+
+  showOnConsole() {
+    console.log(this.currentTime24Target.textContent)
+    console.log(this.currentTime12Target.textContent)
+  }
 }
