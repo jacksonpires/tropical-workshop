@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get "hotwire_example/index"
+  put "hotwire_example/update"
+
   get "welcome/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
