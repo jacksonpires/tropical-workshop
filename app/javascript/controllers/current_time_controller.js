@@ -2,15 +2,21 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="current-time"
 export default class extends Controller {
-  static targets = [ "currentTimeDiv" ]
+  static targets = [ "currentTime24", "currentTime12" ]
 
   connect() {
-    const currentTime = new Date().toLocaleTimeString('pt-BR', { hour12: false })
-    this.element.textContent = `Hora atual: ${currentTime}`
+    const localeTime24 = new Date().toLocaleTimeString('pt-BR', { hour12: false })
+    const localeTime12 = new Date().toLocaleTimeString('pt-BR', { hour12: true })
+
+    this.currentTime24Target.textContent = `Hora atual (24H): ${localeTime24}`
+    this.currentTime12Target.textContent = `Hora atual (12H): ${localeTime12}`
 
     setInterval(() => {
-      const currentTime = new Date().toLocaleTimeString('pt-BR', { hour12: false })
-      this.currentTimeDivTarget.textContent = `Hora atual: ${currentTime}`
+      const localeTime24 = new Date().toLocaleTimeString('pt-BR', { hour12: false })
+      const localeTime12 = new Date().toLocaleTimeString('pt-BR', { hour12: true })
+
+      this.currentTime24Target.textContent = `Hora atual (24H): ${localeTime24}`
+      this.currentTime12Target.textContent = `Hora atual (12H): ${localeTime12}`
     }
     , 1000)
   }
