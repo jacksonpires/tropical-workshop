@@ -11,6 +11,8 @@ class Views::PhlexExample::Index < Views::Base
         link_to("Phlex Docs", "https://www.phlex.fun/introduction/", class: "text-purple-500", target: "_blank")
 
         image_tag("https://framerusercontent.com/images/gXMPTzPfNdd5uK3nLV3TCbWO9c.png?scale-down-to=512", class: "w-1/2")
+
+        render(Views::PhlexExample::CurrentDateAndTime.new)
       end
     end
   end
