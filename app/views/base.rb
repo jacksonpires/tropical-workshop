@@ -9,4 +9,6 @@ class Views::Base < Components::Base
 
   include Phlex::Rails::Helpers::ImageTag
   include Phlex::Rails::Helpers::LinkTo
+
+  register_output_helper :lucide_icon
 end

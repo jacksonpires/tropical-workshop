@@ -4,6 +4,7 @@ module Views
       def view_template
         div(class: "flex w-full justify-center") do
           Alert do
+            lucide_icon("rocket")
             AlertTitle { "Pro tip" }
             AlertDescription { "Simply, don't include an icon and your alert will look like this." }
           end
