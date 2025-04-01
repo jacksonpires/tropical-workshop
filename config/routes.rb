@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "ruby_ui_example/index"
   get "phlex_example/index"
   get "hotwire_example/index"
   put "hotwire_example/update"

@@ -1,0 +1,2 @@
+module RubyUiExampleHelper
+end
