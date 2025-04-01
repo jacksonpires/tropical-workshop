@@ -7,6 +7,7 @@ class Views::Base < Components::Base
   # can change that to `Phlex::HTML` if you want to keep views and
   # components independent.
 
+  include Phlex::Rails::Helpers::FormWith
   include Phlex::Rails::Helpers::ImageTag
   include Phlex::Rails::Helpers::LinkTo
 
