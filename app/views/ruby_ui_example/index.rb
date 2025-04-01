@@ -24,6 +24,16 @@ module Views
               end
             end
           end
+
+          Form(class: "w-2/3 space-y-6") do
+            FormField do
+              FormFieldLabel { "Default error" }
+              Input(placeholder: "Joel Drapper", required: true, minlength: "3") { "Joel Drapper" }
+              FormFieldHint()
+              FormFieldError()
+            end
+            Button(type: "submit") { "Save" }
+          end
         end
       end
     end
