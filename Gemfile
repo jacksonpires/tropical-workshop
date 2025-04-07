@@ -65,7 +65,7 @@ group :test do
   gem "minitest-rails", "~> 8.0.0"
 end
 
-gem "phlex-rails", "~> 2.1"
+gem "phlex-rails", "~> 2.2"
 
 gem "ruby_ui", "~> 1.0", :group => :development, :require => false
 
