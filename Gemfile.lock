@@ -289,7 +289,7 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
-    ruby_ui (1.0.0)
+    ruby_ui (1.0.1)
     rubyzip (2.4.1)
     securerandom (0.4.1)
     selenium-webdriver (4.30.1)
